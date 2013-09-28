@@ -1,8 +1,16 @@
+from django.views.generic.base import View
+from django.http import HttpResponse
+import json
+from django.core import serializers
+from .models import *
+
 class sensordata(View):
 
     def get(self, request):
-
-
+        # return HttpResponse('hello world')
+        data = Reading.objects.all()
+        jsondata = serializers.serialize('json', data)
+        return HttpReponse(jsondata, mimetype='application/json')
 
     def post(self, request):
         timestamp = request.GET.get('t', None)
