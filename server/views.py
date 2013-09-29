@@ -2,7 +2,7 @@ from django.views.generic.base import View
 from django.http import HttpResponse
 import json
 from django.core import serializers
-from .models import *
+from server.models import *
 
 class sensordata(View):
 
