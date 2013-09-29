@@ -19,7 +19,9 @@ class dataview(View):
         if fmt == 'json':
             json_struct = []
             for p in page_data:
-                json_struct.append(model_to_dict(p))
+                json_dict = model_to_dict(p)
+                json_dict['added'] = str(p.added) # have to add timestamp manually because model_to_dict is a dick.
+                json_struct.append(json_dict) # append this dict to the larger struct
             # jsondata = serializers.serialize('json', json_struct)
             return HttpResponse(json.dumps(json_struct), mimetype='application/json')
 
