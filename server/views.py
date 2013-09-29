@@ -19,7 +19,7 @@ class dataview(View):
         if fmt == 'json':
             json_struct = []
             for p in page_data:
-                json_struct.append(p)
+                json_struct.append(model_to_dict(p))
             # jsondata = serializers.serialize('json', json_struct)
             return HttpResponse(json.dumps(json_struct), mimetype='application/json')
 
@@ -37,7 +37,7 @@ class dataview(View):
 
 
     def get_page_data(self, page):
-        data = Reading.objects.all().values()
+        data = Reading.objects.all()
         if page == 'all':
             return data
 
