@@ -1,15 +1,18 @@
 do something like this:
 
-curl --data "t=124563&devID=18&tripID=3&n1=4&v1=9"  http://powerful-sands-3128.herokuapp.com/<SUPER SECRET URL PATH>
+#curl --data "t=124563&devID=18&tripID=3&n1=4&v1=9"  http://powerful-sands-3128.herokuapp.com/[SUPER SECRET URL PATH]
 
-can accept up to 3 more key/value pairs with each POST:
+# can accept up to 3 more key/value pairs with each POST:
 n2=v2, n3=v3, n4=v4
 
-see all the uploaded data at:
+# see all the uploaded data at:
 http://powerful-sands-3128.herokuapp.com/
 
-that is paginated, so like:
+# that is paginated, so like:
 http://powerful-sands-3128.herokuapp.com?page=2
 
-also can get csv
+# to turn pagination off, say page=all
+http://powerful-sands-3128.herokuapp.com?page=all
+
+# also can get csv
 http://powerful-sands-3128.herokuapp.com?page=2&fmt=csv
