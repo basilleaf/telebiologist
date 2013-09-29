@@ -31,7 +31,7 @@ class testview(View):
             return HttpResponse(json.dumps(json_struct), mimetype='application/json')
 
 
-    def get_page_data(page):
+    def get_page_data(self, page):
         data = Reading.objects.all()
         paginator = Paginator(data, 20)
 
