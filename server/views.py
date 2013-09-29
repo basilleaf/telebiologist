@@ -7,7 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 class dataview(View):
 
-        def get(self, request):
+    def get(self, request):
         # return HttpResponse('hello world')
         data = Reading.objects.all()
         jsondata = serializers.serialize('json', data)
