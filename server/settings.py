@@ -1,5 +1,6 @@
 # Django settings for server project.
-from secrets import *
+import os
+SECRET_KEY = os.environ['SECRET_KEY']
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
