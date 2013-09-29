@@ -7,7 +7,17 @@ from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.forms.models import model_to_dict
 
+
 class testview(View):
+
+    def get(self, request):
+        # return HttpResponse('hello world')
+        data = Reading.objects.all()
+        jsondata = serializers.serialize('json', data)
+        return HttpResponse(jsondata, mimetype='application/json')
+
+
+class dataview(View):
 
     def get(self, request):
         data = Reading.objects.all()
@@ -29,15 +39,6 @@ class testview(View):
 
         # jsondata = serializers.serialize('json', json_struct)
         return HttpResponse(json.dumps(json_struct), mimetype='application/json')
-
-
-class dataview(View):
-
-    def get(self, request):
-        # return HttpResponse('hello world')
-        data = Reading.objects.all()
-        jsondata = serializers.serialize('json', data)
-        return HttpResponse(jsondata, mimetype='application/json')
 
 class sensordata(View):
 
