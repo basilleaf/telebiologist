@@ -120,7 +120,7 @@
 <div id="summary">
   <h1>IntegrityError at /</h1>
   <pre class="exception_value">null value in column &quot;timestamp&quot; violates not-null constraint
-DETAIL:  Failing row contains (5, null, null, null, null, null).
+DETAIL:  Failing row contains (9, null, null, null, null, null).
 </pre>
   <table class="meta">
 
@@ -147,7 +147,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
     <tr>
       <th>Exception Value:</th>
       <td><pre>null value in column &quot;timestamp&quot; violates not-null constraint
-DETAIL:  Failing row contains (5, null, null, null, null, null).
+DETAIL:  Failing row contains (9, null, null, null, null, null).
 </pre></td>
     </tr>
 
@@ -182,7 +182,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
     </tr>
     <tr>
       <th>Server time:</th>
-      <td>Sat, 28 Sep 2013 19:31:19 -0500</td>
+      <td>Sat, 28 Sep 2013 19:39:20 -0500</td>
     </tr>
   </table>
 </div>
@@ -200,13 +200,13 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py</code> in <code>get_response</code>
 
           
-            <div class="context" id="c29397648">
+            <div class="context" id="c31799776">
               
-                <ol start="108" class="pre-context" id="pre29397648"><li onclick="toggle('pre29397648', 'post29397648')"><pre>                    for middleware_method in self._view_middleware:</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                        response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                        if response:</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                            break</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre></pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                if response is None:</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                    try:</pre></li></ol>
+                <ol start="108" class="pre-context" id="pre31799776"><li onclick="toggle('pre31799776', 'post31799776')"><pre>                    for middleware_method in self._view_middleware:</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                        response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                        if response:</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                            break</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre></pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                if response is None:</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                    try:</pre></li></ol>
               
-              <ol start="115" class="context-line"><li onclick="toggle('pre29397648', 'post29397648')"><pre>                        response = callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
+              <ol start="115" class="context-line"><li onclick="toggle('pre31799776', 'post31799776')"><pre>                        response = callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='116' class="post-context" id="post29397648"><li onclick="toggle('pre29397648', 'post29397648')"><pre>                    except Exception as e:</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                        # If the view raised an exception, run it through exception</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                        # middleware, and if the exception middleware returns a</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                        # response, use that. Otherwise, reraise the exception.</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                        for middleware_method in self._exception_middleware:</pre></li><li onclick="toggle('pre29397648', 'post29397648')"><pre>                            response = middleware_method(request, e)</pre></li></ol>
+                <ol start='116' class="post-context" id="post31799776"><li onclick="toggle('pre31799776', 'post31799776')"><pre>                    except Exception as e:</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                        # If the view raised an exception, run it through exception</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                        # middleware, and if the exception middleware returns a</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                        # response, use that. Otherwise, reraise the exception.</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                        for middleware_method in self._exception_middleware:</pre></li><li onclick="toggle('pre31799776', 'post31799776')"><pre>                            response = middleware_method(request, e)</pre></li></ol>
               
             </div>
           
@@ -214,10 +214,10 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '29397648')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31799776')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v29397648">
+            <table class="vars" id="v31799776">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -228,7 +228,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
                 
                   <tr>
                     <td>e</td>
-                    <td class="code"><pre>IntegrityError(&#39;null value in column &quot;timestamp&quot; violates not-null constraint\nDETAIL:  Failing row contains (5, null, null, null, null, null).\n&#39;,)</pre></td>
+                    <td class="code"><pre>IntegrityError(&#39;null value in column &quot;timestamp&quot; violates not-null constraint\nDETAIL:  Failing row contains (9, null, null, null, null, null).\n&#39;,)</pre></td>
                   </tr>
                 
                   <tr>
@@ -273,7 +273,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;timestamp&#39;: [u&#39;123&#39;], u&#39;device_id&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;628qakEgYFwqa4KGGxP0xJRGC2WYJC7b&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380414679675&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.68.74.220&#39;,\n &#39;REMOTE_PORT&#39;: &#39;38583&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d288a0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1dd2e10&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;t&#39;: [u&#39;124563&#39;], u&#39;n1&#39;: [u&#39;4&#39;], u&#39;tripID&#39;: [u&#39;3&#39;], u&#39;v1&#39;: [u&#39;9&#39;], u&#39;devID&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;36&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;bDHp3weBtHbO4cHznjLMEFEcSEYfRqG1&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380415160171&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.42.117.146&#39;,\n &#39;REMOTE_PORT&#39;: &#39;39861&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d283d0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1d46f50&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
                   </tr>
                 
                   <tr>
@@ -290,13 +290,13 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/views/decorators/csrf.py</code> in <code>wrapped_view</code>
 
           
-            <div class="context" id="c29397720">
+            <div class="context" id="c31798768">
               
-                <ol start="70" class="pre-context" id="pre29397720"><li onclick="toggle('pre29397720', 'post29397720')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre29397720', 'post29397720')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li><li onclick="toggle('pre29397720', 'post29397720')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre29397720', 'post29397720')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li><li onclick="toggle('pre29397720', 'post29397720')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li><li onclick="toggle('pre29397720', 'post29397720')"><pre>    # function.</pre></li><li onclick="toggle('pre29397720', 'post29397720')"><pre>    def wrapped_view(*args, **kwargs):</pre></li></ol>
+                <ol start="70" class="pre-context" id="pre31798768"><li onclick="toggle('pre31798768', 'post31798768')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre31798768', 'post31798768')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li><li onclick="toggle('pre31798768', 'post31798768')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre31798768', 'post31798768')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li><li onclick="toggle('pre31798768', 'post31798768')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li><li onclick="toggle('pre31798768', 'post31798768')"><pre>    # function.</pre></li><li onclick="toggle('pre31798768', 'post31798768')"><pre>    def wrapped_view(*args, **kwargs):</pre></li></ol>
               
-              <ol start="77" class="context-line"><li onclick="toggle('pre29397720', 'post29397720')"><pre>        return view_func(*args, **kwargs)</pre> <span>...</span></li></ol>
+              <ol start="77" class="context-line"><li onclick="toggle('pre31798768', 'post31798768')"><pre>        return view_func(*args, **kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='78' class="post-context" id="post29397720"><li onclick="toggle('pre29397720', 'post29397720')"><pre>    wrapped_view.csrf_exempt = True</pre></li><li onclick="toggle('pre29397720', 'post29397720')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li></ol>
+                <ol start='78' class="post-context" id="post31798768"><li onclick="toggle('pre31798768', 'post31798768')"><pre>    wrapped_view.csrf_exempt = True</pre></li><li onclick="toggle('pre31798768', 'post31798768')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li></ol>
               
             </div>
           
@@ -304,10 +304,10 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '29397720')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31798768')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v29397720">
+            <table class="vars" id="v31798768">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -326,11 +326,11 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
                     <td class="code"><pre>(&lt;WSGIRequest
 path:/,
 GET:&lt;QueryDict: {}&gt;,
-POST:&lt;QueryDict: {u&#39;timestamp&#39;: [u&#39;123&#39;], u&#39;device_id&#39;: [u&#39;18&#39;]}&gt;,
+POST:&lt;QueryDict: {u&#39;t&#39;: [u&#39;124563&#39;], u&#39;n1&#39;: [u&#39;4&#39;], u&#39;tripID&#39;: [u&#39;3&#39;], u&#39;v1&#39;: [u&#39;9&#39;], u&#39;devID&#39;: [u&#39;18&#39;]}&gt;,
 COOKIES:{},
-META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
+META:{&#39;CONTENT_LENGTH&#39;: &#39;36&#39;,
  &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,
- u&#39;CSRF_COOKIE&#39;: u&#39;628qakEgYFwqa4KGGxP0xJRGC2WYJC7b&#39;,
+ u&#39;CSRF_COOKIE&#39;: u&#39;bDHp3weBtHbO4cHznjLMEFEcSEYfRqG1&#39;,
  &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,
  &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,
  &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,
@@ -338,22 +338,22 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
  &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,
  &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,
  &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,
- &#39;HTTP_X_REQUEST_START&#39;: &#39;1380414679675&#39;,
+ &#39;HTTP_X_REQUEST_START&#39;: &#39;1380415160171&#39;,
  &#39;PATH_INFO&#39;: u&#39;/&#39;,
  &#39;QUERY_STRING&#39;: &#39;&#39;,
  &#39;RAW_URI&#39;: &#39;/&#39;,
- &#39;REMOTE_ADDR&#39;: &#39;10.68.74.220&#39;,
- &#39;REMOTE_PORT&#39;: &#39;38583&#39;,
+ &#39;REMOTE_ADDR&#39;: &#39;10.42.117.146&#39;,
+ &#39;REMOTE_PORT&#39;: &#39;39861&#39;,
  &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,
  &#39;SCRIPT_NAME&#39;: u&#39;&#39;,
  &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,
  &#39;SERVER_PORT&#39;: &#39;80&#39;,
  &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,
  &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,
- &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d288a0&gt;,
+ &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d283d0&gt;,
  &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,
  &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,
- &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1dd2e10&gt;,
+ &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1d46f50&gt;,
  &#39;wsgi.multiprocess&#39;: False,
  &#39;wsgi.multithread&#39;: False,
  &#39;wsgi.run_once&#39;: False,
@@ -375,13 +375,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/views/generic/base.py</code> in <code>view</code>
 
           
-            <div class="context" id="c29397216">
+            <div class="context" id="c31797688">
               
-                <ol start="61" class="pre-context" id="pre29397216"><li onclick="toggle('pre29397216', 'post29397216')"><pre>        def view(request, *args, **kwargs):</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>            self = cls(**initkwargs)</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>            if hasattr(self, &#39;get&#39;) and not hasattr(self, &#39;head&#39;):</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>                self.head = self.get</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>            self.request = request</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>            self.args = args</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>            self.kwargs = kwargs</pre></li></ol>
+                <ol start="61" class="pre-context" id="pre31797688"><li onclick="toggle('pre31797688', 'post31797688')"><pre>        def view(request, *args, **kwargs):</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>            self = cls(**initkwargs)</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>            if hasattr(self, &#39;get&#39;) and not hasattr(self, &#39;head&#39;):</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>                self.head = self.get</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>            self.request = request</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>            self.args = args</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>            self.kwargs = kwargs</pre></li></ol>
               
-              <ol start="68" class="context-line"><li onclick="toggle('pre29397216', 'post29397216')"><pre>            return self.dispatch(request, *args, **kwargs)</pre> <span>...</span></li></ol>
+              <ol start="68" class="context-line"><li onclick="toggle('pre31797688', 'post31797688')"><pre>            return self.dispatch(request, *args, **kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='69' class="post-context" id="post29397216"><li onclick="toggle('pre29397216', 'post29397216')"><pre></pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>        # take name and docstring from class</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>        update_wrapper(view, cls, updated=())</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre></pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>        # and possible attributes set by decorators</pre></li><li onclick="toggle('pre29397216', 'post29397216')"><pre>        # like csrf_exempt from dispatch</pre></li></ol>
+                <ol start='69' class="post-context" id="post31797688"><li onclick="toggle('pre31797688', 'post31797688')"><pre></pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>        # take name and docstring from class</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>        update_wrapper(view, cls, updated=())</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre></pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>        # and possible attributes set by decorators</pre></li><li onclick="toggle('pre31797688', 'post31797688')"><pre>        # like csrf_exempt from dispatch</pre></li></ol>
               
             </div>
           
@@ -389,10 +389,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '29397216')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31797688')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v29397216">
+            <table class="vars" id="v31797688">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -418,12 +418,12 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;timestamp&#39;: [u&#39;123&#39;], u&#39;device_id&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;628qakEgYFwqa4KGGxP0xJRGC2WYJC7b&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380414679675&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.68.74.220&#39;,\n &#39;REMOTE_PORT&#39;: &#39;38583&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d288a0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1dd2e10&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;t&#39;: [u&#39;124563&#39;], u&#39;n1&#39;: [u&#39;4&#39;], u&#39;tripID&#39;: [u&#39;3&#39;], u&#39;v1&#39;: [u&#39;9&#39;], u&#39;devID&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;36&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;bDHp3weBtHbO4cHznjLMEFEcSEYfRqG1&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380415160171&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.42.117.146&#39;,\n &#39;REMOTE_PORT&#39;: &#39;39861&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d283d0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1d46f50&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;server.views.sensordata object at 0x1dd2610&gt;</pre></td>
+                    <td class="code"><pre>&lt;server.views.sensordata object at 0x1d46e50&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -440,13 +440,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/views/generic/base.py</code> in <code>dispatch</code>
 
           
-            <div class="context" id="c29397504">
+            <div class="context" id="c30076008">
               
-                <ol start="79" class="pre-context" id="pre29397504"><li onclick="toggle('pre29397504', 'post29397504')"><pre>        # Try to dispatch to the right method; if a method doesn&#39;t exist,</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>        # defer to the error handler. Also defer to the error handler if the</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>        # request method isn&#39;t on the approved list.</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>        if request.method.lower() in self.http_method_names:</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>            handler = getattr(self, request.method.lower(), self.http_method_not_allowed)</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>        else:</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>            handler = self.http_method_not_allowed</pre></li></ol>
+                <ol start="79" class="pre-context" id="pre30076008"><li onclick="toggle('pre30076008', 'post30076008')"><pre>        # Try to dispatch to the right method; if a method doesn&#39;t exist,</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>        # defer to the error handler. Also defer to the error handler if the</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>        # request method isn&#39;t on the approved list.</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>        if request.method.lower() in self.http_method_names:</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>            handler = getattr(self, request.method.lower(), self.http_method_not_allowed)</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>        else:</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>            handler = self.http_method_not_allowed</pre></li></ol>
               
-              <ol start="86" class="context-line"><li onclick="toggle('pre29397504', 'post29397504')"><pre>        return handler(request, *args, **kwargs)</pre> <span>...</span></li></ol>
+              <ol start="86" class="context-line"><li onclick="toggle('pre30076008', 'post30076008')"><pre>        return handler(request, *args, **kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='87' class="post-context" id="post29397504"><li onclick="toggle('pre29397504', 'post29397504')"><pre></pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>    def http_method_not_allowed(self, request, *args, **kwargs):</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>        logger.warning(&#39;Method Not Allowed (%s): %s&#39;, request.method, request.path,</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>            extra={</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>                &#39;status_code&#39;: 405,</pre></li><li onclick="toggle('pre29397504', 'post29397504')"><pre>                &#39;request&#39;: self.request</pre></li></ol>
+                <ol start='87' class="post-context" id="post30076008"><li onclick="toggle('pre30076008', 'post30076008')"><pre></pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    def http_method_not_allowed(self, request, *args, **kwargs):</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>        logger.warning(&#39;Method Not Allowed (%s): %s&#39;, request.method, request.path,</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>            extra={</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>                &#39;status_code&#39;: 405,</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>                &#39;request&#39;: self.request</pre></li></ol>
               
             </div>
           
@@ -454,10 +454,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '29397504')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '30076008')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v29397504">
+            <table class="vars" id="v30076008">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -478,17 +478,17 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;timestamp&#39;: [u&#39;123&#39;], u&#39;device_id&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;628qakEgYFwqa4KGGxP0xJRGC2WYJC7b&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380414679675&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.68.74.220&#39;,\n &#39;REMOTE_PORT&#39;: &#39;38583&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d288a0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1dd2e10&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;t&#39;: [u&#39;124563&#39;], u&#39;n1&#39;: [u&#39;4&#39;], u&#39;tripID&#39;: [u&#39;3&#39;], u&#39;v1&#39;: [u&#39;9&#39;], u&#39;devID&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;36&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;bDHp3weBtHbO4cHznjLMEFEcSEYfRqG1&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380415160171&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.42.117.146&#39;,\n &#39;REMOTE_PORT&#39;: &#39;39861&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d283d0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1d46f50&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>handler</td>
-                    <td class="code"><pre>&lt;bound method sensordata.post of &lt;server.views.sensordata object at 0x1dd2610&gt;&gt;</pre></td>
+                    <td class="code"><pre>&lt;bound method sensordata.post of &lt;server.views.sensordata object at 0x1d46e50&gt;&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;server.views.sensordata object at 0x1dd2610&gt;</pre></td>
+                    <td class="code"><pre>&lt;server.views.sensordata object at 0x1d46e50&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -500,11 +500,11 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/server/views.py</code> in <code>post</code>
 
           
-            <div class="context" id="c31034112">
+            <div class="context" id="c30076584">
               
-                <ol start="18" class="pre-context" id="pre31034112"><li onclick="toggle('pre31034112', 'post31034112')"><pre>        timestamp = request.GET.get(&#39;t&#39;, None)</pre></li><li onclick="toggle('pre31034112', 'post31034112')"><pre>        device_id = request.GET.get(&#39;devID&#39;, None)</pre></li><li onclick="toggle('pre31034112', 'post31034112')"><pre>        trip_id = request.GET.get(&#39;tripID&#39;, None)</pre></li><li onclick="toggle('pre31034112', 'post31034112')"><pre>        sensor_id = request.GET.get(&#39;n1&#39;, None)</pre></li><li onclick="toggle('pre31034112', 'post31034112')"><pre>        sensor_value = request.GET.get(&#39;v1&#39;, None)</pre></li><li onclick="toggle('pre31034112', 'post31034112')"><pre></pre></li><li onclick="toggle('pre31034112', 'post31034112')"><pre>        reading = Reading(timestamp=timestamp, device_id=device_id, trip_id=trip_id, sensor_id=sensor_id, sensor_value=sensor_value)</pre></li></ol>
+                <ol start="18" class="pre-context" id="pre30076584"><li onclick="toggle('pre30076584', 'post30076584')"><pre>        timestamp = request.GET.get(&#39;t&#39;, None)</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        device_id = request.GET.get(&#39;devID&#39;, None)</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        trip_id = request.GET.get(&#39;tripID&#39;, None)</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        sensor_id = request.GET.get(&#39;n1&#39;, None)</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        sensor_value = request.GET.get(&#39;v1&#39;, None)</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre></pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        reading = Reading(timestamp=timestamp, device_id=device_id, trip_id=trip_id, sensor_id=sensor_id, sensor_value=sensor_value)</pre></li></ol>
               
-              <ol start="25" class="context-line"><li onclick="toggle('pre31034112', 'post31034112')"><pre>        reading.save()</pre> <span>...</span></li></ol>
+              <ol start="25" class="context-line"><li onclick="toggle('pre30076584', 'post30076584')"><pre>        reading.save()</pre> <span>...</span></li></ol>
               
             </div>
           
@@ -512,10 +512,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '31034112')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '30076584')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v31034112">
+            <table class="vars" id="v30076584">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -536,7 +536,7 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;timestamp&#39;: [u&#39;123&#39;], u&#39;device_id&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;628qakEgYFwqa4KGGxP0xJRGC2WYJC7b&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380414679675&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.68.74.220&#39;,\n &#39;REMOTE_PORT&#39;: &#39;38583&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d288a0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1dd2e10&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {u&#39;t&#39;: [u&#39;124563&#39;], u&#39;n1&#39;: [u&#39;4&#39;], u&#39;tripID&#39;: [u&#39;3&#39;], u&#39;v1&#39;: [u&#39;9&#39;], u&#39;devID&#39;: [u&#39;18&#39;]}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;36&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;application/x-www-form-urlencoded&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;bDHp3weBtHbO4cHznjLMEFEcSEYfRqG1&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_CONNECTION&#39;: &#39;close&#39;,\n &#39;HTTP_HOST&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8x zlib/1.2.5&#39;,\n &#39;HTTP_X_FORWARDED_FOR&#39;: &#39;12.189.20.126&#39;,\n &#39;HTTP_X_FORWARDED_PORT&#39;: &#39;80&#39;,\n &#39;HTTP_X_FORWARDED_PROTO&#39;: &#39;http&#39;,\n &#39;HTTP_X_REQUEST_START&#39;: &#39;1380415160171&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;10.42.117.146&#39;,\n &#39;REMOTE_PORT&#39;: &#39;39861&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;powerful-sands-3128.herokuapp.com&#39;,\n &#39;SERVER_PORT&#39;: &#39;80&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/0.17.2&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x1d283d0&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f0e3c8691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0xf5f120&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x1d46f50&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
                   </tr>
                 
                   <tr>
@@ -561,7 +561,7 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;server.views.sensordata object at 0x1dd2610&gt;</pre></td>
+                    <td class="code"><pre>&lt;server.views.sensordata object at 0x1d46e50&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -573,13 +573,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/models/base.py</code> in <code>save</code>
 
           
-            <div class="context" id="c31034976">
+            <div class="context" id="c30075936">
               
-                <ol start="539" class="pre-context" id="pre31034976"><li onclick="toggle('pre31034976', 'post31034976')"><pre>                                  DeferredAttribute)]</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre></pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>            loaded_fields = field_names.difference(deferred_fields)</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>            if loaded_fields:</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>                update_fields = frozenset(loaded_fields)</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre></pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>        self.save_base(using=using, force_insert=force_insert,</pre></li></ol>
+                <ol start="539" class="pre-context" id="pre30075936"><li onclick="toggle('pre30075936', 'post30075936')"><pre>                                  DeferredAttribute)]</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre></pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>            loaded_fields = field_names.difference(deferred_fields)</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>            if loaded_fields:</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>                update_fields = frozenset(loaded_fields)</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre></pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>        self.save_base(using=using, force_insert=force_insert,</pre></li></ol>
               
-              <ol start="546" class="context-line"><li onclick="toggle('pre31034976', 'post31034976')"><pre>                       force_update=force_update, update_fields=update_fields)</pre> <span>...</span></li></ol>
+              <ol start="546" class="context-line"><li onclick="toggle('pre30075936', 'post30075936')"><pre>                       force_update=force_update, update_fields=update_fields)</pre> <span>...</span></li></ol>
               
-                <ol start='547' class="post-context" id="post31034976"><li onclick="toggle('pre31034976', 'post31034976')"><pre>    save.alters_data = True</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre></pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>    def save_base(self, raw=False, cls=None, origin=None, force_insert=False,</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>                  force_update=False, using=None, update_fields=None):</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>        &quot;&quot;&quot;</pre></li><li onclick="toggle('pre31034976', 'post31034976')"><pre>        Does the heavy-lifting involved in saving. Subclasses shouldn&#39;t need to</pre></li></ol>
+                <ol start='547' class="post-context" id="post30075936"><li onclick="toggle('pre30075936', 'post30075936')"><pre>    save.alters_data = True</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre></pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>    def save_base(self, raw=False, cls=None, origin=None, force_insert=False,</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>                  force_update=False, using=None, update_fields=None):</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>        &quot;&quot;&quot;</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>        Does the heavy-lifting involved in saving. Subclasses shouldn&#39;t need to</pre></li></ol>
               
             </div>
           
@@ -587,10 +587,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '31034976')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '30075936')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v31034976">
+            <table class="vars" id="v30075936">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -633,13 +633,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/models/base.py</code> in <code>save_base</code>
 
           
-            <div class="context" id="c31032384">
+            <div class="context" id="c31021032">
               
-                <ol start="643" class="pre-context" id="pre31032384"><li onclick="toggle('pre31032384', 'post31032384')"><pre>                    if force_update or update_fields:</pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>                        raise ValueError(&quot;Cannot force an update in save() with no primary key.&quot;)</pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>                    fields = [f for f in fields if not isinstance(f, AutoField)]</pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre></pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>                record_exists = False</pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre></pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>                update_pk = bool(meta.has_auto_field and not pk_set)</pre></li></ol>
+                <ol start="643" class="pre-context" id="pre31021032"><li onclick="toggle('pre31021032', 'post31021032')"><pre>                    if force_update or update_fields:</pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>                        raise ValueError(&quot;Cannot force an update in save() with no primary key.&quot;)</pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>                    fields = [f for f in fields if not isinstance(f, AutoField)]</pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre></pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>                record_exists = False</pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre></pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>                update_pk = bool(meta.has_auto_field and not pk_set)</pre></li></ol>
               
-              <ol start="650" class="context-line"><li onclick="toggle('pre31032384', 'post31032384')"><pre>                result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)</pre> <span>...</span></li></ol>
+              <ol start="650" class="context-line"><li onclick="toggle('pre31021032', 'post31021032')"><pre>                result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)</pre> <span>...</span></li></ol>
               
-                <ol start='651' class="post-context" id="post31032384"><li onclick="toggle('pre31032384', 'post31032384')"><pre></pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>                if update_pk:</pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>                    setattr(self, meta.pk.attname, result)</pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>            transaction.commit_unless_managed(using=using)</pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre></pre></li><li onclick="toggle('pre31032384', 'post31032384')"><pre>        # Store the database on which the object was saved</pre></li></ol>
+                <ol start='651' class="post-context" id="post31021032"><li onclick="toggle('pre31021032', 'post31021032')"><pre></pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>                if update_pk:</pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>                    setattr(self, meta.pk.attname, result)</pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>            transaction.commit_unless_managed(using=using)</pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre></pre></li><li onclick="toggle('pre31021032', 'post31021032')"><pre>        # Store the database on which the object was saved</pre></li></ol>
               
             </div>
           
@@ -647,10 +647,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '31032384')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31021032')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v31032384">
+            <table class="vars" id="v31021032">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -766,13 +766,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/models/manager.py</code> in <code>_insert</code>
 
           
-            <div class="context" id="c15072576">
+            <div class="context" id="c31020960">
               
-                <ol start="208" class="pre-context" id="pre15072576"><li onclick="toggle('pre15072576', 'post15072576')"><pre>    def using(self, *args, **kwargs):</pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>        return self.get_query_set().using(*args, **kwargs)</pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre></pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>    def exists(self, *args, **kwargs):</pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>        return self.get_query_set().exists(*args, **kwargs)</pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre></pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>    def _insert(self, objs, fields, **kwargs):</pre></li></ol>
+                <ol start="208" class="pre-context" id="pre31020960"><li onclick="toggle('pre31020960', 'post31020960')"><pre>    def using(self, *args, **kwargs):</pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>        return self.get_query_set().using(*args, **kwargs)</pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre></pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>    def exists(self, *args, **kwargs):</pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>        return self.get_query_set().exists(*args, **kwargs)</pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre></pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>    def _insert(self, objs, fields, **kwargs):</pre></li></ol>
               
-              <ol start="215" class="context-line"><li onclick="toggle('pre15072576', 'post15072576')"><pre>        return insert_query(self.model, objs, fields, **kwargs)</pre> <span>...</span></li></ol>
+              <ol start="215" class="context-line"><li onclick="toggle('pre31020960', 'post31020960')"><pre>        return insert_query(self.model, objs, fields, **kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='216' class="post-context" id="post15072576"><li onclick="toggle('pre15072576', 'post15072576')"><pre></pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>    def _update(self, values, **kwargs):</pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>        return self.get_query_set()._update(values, **kwargs)</pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre></pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>    def raw(self, raw_query, params=None, *args, **kwargs):</pre></li><li onclick="toggle('pre15072576', 'post15072576')"><pre>        return RawQuerySet(raw_query=raw_query, model=self.model, params=params, using=self._db, *args, **kwargs)</pre></li></ol>
+                <ol start='216' class="post-context" id="post31020960"><li onclick="toggle('pre31020960', 'post31020960')"><pre></pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>    def _update(self, values, **kwargs):</pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>        return self.get_query_set()._update(values, **kwargs)</pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre></pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>    def raw(self, raw_query, params=None, *args, **kwargs):</pre></li><li onclick="toggle('pre31020960', 'post31020960')"><pre>        return RawQuerySet(raw_query=raw_query, model=self.model, params=params, using=self._db, *args, **kwargs)</pre></li></ol>
               
             </div>
           
@@ -780,10 +780,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '15072576')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31020960')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v15072576">
+            <table class="vars" id="v31020960">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -825,13 +825,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/models/query.py</code> in <code>insert_query</code>
 
           
-            <div class="context" id="c30076008">
+            <div class="context" id="c31020888">
               
-                <ol start="1668" class="pre-context" id="pre30076008"><li onclick="toggle('pre30076008', 'post30076008')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    Inserts a new record for the given model. This provides an interface to</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    the InsertQuery class and is how Model.save() is implemented. It is not</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    part of the public API.</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    query = sql.InsertQuery(model)</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    query.insert_values(fields, objs, raw=raw)</pre></li></ol>
+                <ol start="1668" class="pre-context" id="pre31020888"><li onclick="toggle('pre31020888', 'post31020888')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    Inserts a new record for the given model. This provides an interface to</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    the InsertQuery class and is how Model.save() is implemented. It is not</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    part of the public API.</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    query = sql.InsertQuery(model)</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    query.insert_values(fields, objs, raw=raw)</pre></li></ol>
               
-              <ol start="1675" class="context-line"><li onclick="toggle('pre30076008', 'post30076008')"><pre>    return query.get_compiler(using=using).execute_sql(return_id)</pre> <span>...</span></li></ol>
+              <ol start="1675" class="context-line"><li onclick="toggle('pre31020888', 'post31020888')"><pre>    return query.get_compiler(using=using).execute_sql(return_id)</pre> <span>...</span></li></ol>
               
-                <ol start='1676' class="post-context" id="post30076008"><li onclick="toggle('pre30076008', 'post30076008')"><pre></pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre></pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>def prefetch_related_objects(result_cache, related_lookups):</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre>    Helper function for prefetch_related functionality</pre></li><li onclick="toggle('pre30076008', 'post30076008')"><pre></pre></li></ol>
+                <ol start='1676' class="post-context" id="post31020888"><li onclick="toggle('pre31020888', 'post31020888')"><pre></pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre></pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>def prefetch_related_objects(result_cache, related_lookups):</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre>    Helper function for prefetch_related functionality</pre></li><li onclick="toggle('pre31020888', 'post31020888')"><pre></pre></li></ol>
               
             </div>
           
@@ -839,10 +839,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '30076008')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31020888')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v30076008">
+            <table class="vars" id="v31020888">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -867,7 +867,7 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>query</td>
-                    <td class="code"><pre>&lt;django.db.models.sql.subqueries.InsertQuery object at 0x1dd25d0&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.db.models.sql.subqueries.InsertQuery object at 0x1d46390&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -899,13 +899,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/models/sql/compiler.py</code> in <code>execute_sql</code>
 
           
-            <div class="context" id="c30076584">
+            <div class="context" id="c31021104">
               
-                <ol start="930" class="pre-context" id="pre30076584"><li onclick="toggle('pre30076584', 'post30076584')"><pre>            ]</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre></pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>    def execute_sql(self, return_id=False):</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        assert not (return_id and len(self.query.objs) != 1)</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        self.return_id = return_id</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        cursor = self.connection.cursor()</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        for sql, params in self.as_sql():</pre></li></ol>
+                <ol start="930" class="pre-context" id="pre31021104"><li onclick="toggle('pre31021104', 'post31021104')"><pre>            ]</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre></pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>    def execute_sql(self, return_id=False):</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>        assert not (return_id and len(self.query.objs) != 1)</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>        self.return_id = return_id</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>        cursor = self.connection.cursor()</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>        for sql, params in self.as_sql():</pre></li></ol>
               
-              <ol start="937" class="context-line"><li onclick="toggle('pre30076584', 'post30076584')"><pre>            cursor.execute(sql, params)</pre> <span>...</span></li></ol>
+              <ol start="937" class="context-line"><li onclick="toggle('pre31021104', 'post31021104')"><pre>            cursor.execute(sql, params)</pre> <span>...</span></li></ol>
               
-                <ol start='938' class="post-context" id="post30076584"><li onclick="toggle('pre30076584', 'post30076584')"><pre>        if not (return_id and cursor):</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>            return</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        if self.connection.features.can_return_id_from_insert:</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>            return self.connection.ops.fetch_returned_insert_id(cursor)</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>        return self.connection.ops.last_insert_id(cursor,</pre></li><li onclick="toggle('pre30076584', 'post30076584')"><pre>                self.query.model._meta.db_table, self.query.model._meta.pk.column)</pre></li></ol>
+                <ol start='938' class="post-context" id="post31021104"><li onclick="toggle('pre31021104', 'post31021104')"><pre>        if not (return_id and cursor):</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>            return</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>        if self.connection.features.can_return_id_from_insert:</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>            return self.connection.ops.fetch_returned_insert_id(cursor)</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>        return self.connection.ops.last_insert_id(cursor,</pre></li><li onclick="toggle('pre31021104', 'post31021104')"><pre>                self.query.model._meta.db_table, self.query.model._meta.pk.column)</pre></li></ol>
               
             </div>
           
@@ -913,10 +913,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '30076584')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31021104')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v30076584">
+            <table class="vars" id="v31021104">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -927,12 +927,12 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.db.models.sql.compiler.SQLInsertCompiler object at 0x1dd2910&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.db.models.sql.compiler.SQLInsertCompiler object at 0x1d46310&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>cursor</td>
-                    <td class="code"><pre>&lt;django.db.backends.util.CursorDebugWrapper object at 0x1dd28d0&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.db.backends.util.CursorDebugWrapper object at 0x1d68150&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -959,13 +959,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/backends/util.py</code> in <code>execute</code>
 
           
-            <div class="context" id="c30075936">
+            <div class="context" id="c31020816">
               
-                <ol start="34" class="pre-context" id="pre30075936"><li onclick="toggle('pre30075936', 'post30075936')"><pre></pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>class CursorDebugWrapper(CursorWrapper):</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre></pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>    def execute(self, sql, params=()):</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>        self.set_dirty()</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>        start = time()</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>        try:</pre></li></ol>
+                <ol start="34" class="pre-context" id="pre31020816"><li onclick="toggle('pre31020816', 'post31020816')"><pre></pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>class CursorDebugWrapper(CursorWrapper):</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre></pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>    def execute(self, sql, params=()):</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>        self.set_dirty()</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>        start = time()</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>        try:</pre></li></ol>
               
-              <ol start="41" class="context-line"><li onclick="toggle('pre30075936', 'post30075936')"><pre>            return self.cursor.execute(sql, params)</pre> <span>...</span></li></ol>
+              <ol start="41" class="context-line"><li onclick="toggle('pre31020816', 'post31020816')"><pre>            return self.cursor.execute(sql, params)</pre> <span>...</span></li></ol>
               
-                <ol start='42' class="post-context" id="post30075936"><li onclick="toggle('pre30075936', 'post30075936')"><pre>        finally:</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>            stop = time()</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>            duration = stop - start</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>            sql = self.db.ops.last_executed_query(self.cursor, sql, params)</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>            self.db.queries.append({</pre></li><li onclick="toggle('pre30075936', 'post30075936')"><pre>                &#39;sql&#39;: sql,</pre></li></ol>
+                <ol start='42' class="post-context" id="post31020816"><li onclick="toggle('pre31020816', 'post31020816')"><pre>        finally:</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>            stop = time()</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>            duration = stop - start</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>            sql = self.db.ops.last_executed_query(self.cursor, sql, params)</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>            self.db.queries.append({</pre></li><li onclick="toggle('pre31020816', 'post31020816')"><pre>                &#39;sql&#39;: sql,</pre></li></ol>
               
             </div>
           
@@ -973,10 +973,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '30075936')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31020816')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v30075936">
+            <table class="vars" id="v31020816">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -987,12 +987,12 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>duration</td>
-                    <td class="code"><pre>0.007840871810913086</pre></td>
+                    <td class="code"><pre>0.03496503829956055</pre></td>
                   </tr>
                 
                   <tr>
                     <td>stop</td>
-                    <td class="code"><pre>1380414679.828218</pre></td>
+                    <td class="code"><pre>1380415160.453133</pre></td>
                   </tr>
                 
                   <tr>
@@ -1007,12 +1007,12 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>start</td>
-                    <td class="code"><pre>1380414679.820377</pre></td>
+                    <td class="code"><pre>1380415160.418168</pre></td>
                   </tr>
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.db.backends.util.CursorDebugWrapper object at 0x1dd28d0&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.db.backends.util.CursorDebugWrapper object at 0x1d68150&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -1024,13 +1024,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py</code> in <code>execute</code>
 
           
-            <div class="context" id="c30944216">
+            <div class="context" id="c31020312">
               
-                <ol start="49" class="pre-context" id="pre30944216"><li onclick="toggle('pre30944216', 'post30944216')"><pre>    def __init__(self, cursor):</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>        self.cursor = cursor</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre></pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>    def execute(self, query, args=None):</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>        try:</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>            return self.cursor.execute(query, args)</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>        except Database.IntegrityError as e:</pre></li></ol>
+                <ol start="49" class="pre-context" id="pre31020312"><li onclick="toggle('pre31020312', 'post31020312')"><pre>    def __init__(self, cursor):</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>        self.cursor = cursor</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre></pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>    def execute(self, query, args=None):</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>        try:</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>            return self.cursor.execute(query, args)</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>        except Database.IntegrityError as e:</pre></li></ol>
               
-              <ol start="56" class="context-line"><li onclick="toggle('pre30944216', 'post30944216')"><pre>            six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])</pre> <span>...</span></li></ol>
+              <ol start="56" class="context-line"><li onclick="toggle('pre31020312', 'post31020312')"><pre>            six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])</pre> <span>...</span></li></ol>
               
-                <ol start='57' class="post-context" id="post30944216"><li onclick="toggle('pre30944216', 'post30944216')"><pre>        except Database.DatabaseError as e:</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>            six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre></pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>    def executemany(self, query, args):</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>        try:</pre></li><li onclick="toggle('pre30944216', 'post30944216')"><pre>            return self.cursor.executemany(query, args)</pre></li></ol>
+                <ol start='57' class="post-context" id="post31020312"><li onclick="toggle('pre31020312', 'post31020312')"><pre>        except Database.DatabaseError as e:</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>            six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre></pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>    def executemany(self, query, args):</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>        try:</pre></li><li onclick="toggle('pre31020312', 'post31020312')"><pre>            return self.cursor.executemany(query, args)</pre></li></ol>
               
             </div>
           
@@ -1038,10 +1038,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '30944216')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '31020312')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v30944216">
+            <table class="vars" id="v31020312">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -1057,7 +1057,7 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>e</td>
-                    <td class="code"><pre>IntegrityError(&#39;null value in column &quot;timestamp&quot; violates not-null constraint\nDETAIL:  Failing row contains (5, null, null, null, null, null).\n&#39;,)</pre></td>
+                    <td class="code"><pre>IntegrityError(&#39;null value in column &quot;timestamp&quot; violates not-null constraint\nDETAIL:  Failing row contains (9, null, null, null, null, null).\n&#39;,)</pre></td>
                   </tr>
                 
                   <tr>
@@ -1067,7 +1067,7 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.db.backends.postgresql_psycopg2.base.CursorWrapper object at 0x1dd29d0&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql_psycopg2.base.CursorWrapper object at 0x1d68050&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -1079,13 +1079,13 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           <code>/app/.heroku/python/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py</code> in <code>execute</code>
 
           
-            <div class="context" id="c30945224">
+            <div class="context" id="c29398440">
               
-                <ol start="47" class="pre-context" id="pre30945224"><li onclick="toggle('pre30945224', 'post30945224')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre></pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>    def __init__(self, cursor):</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>        self.cursor = cursor</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre></pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>    def execute(self, query, args=None):</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>        try:</pre></li></ol>
+                <ol start="47" class="pre-context" id="pre29398440"><li onclick="toggle('pre29398440', 'post29398440')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre></pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>    def __init__(self, cursor):</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>        self.cursor = cursor</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre></pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>    def execute(self, query, args=None):</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>        try:</pre></li></ol>
               
-              <ol start="54" class="context-line"><li onclick="toggle('pre30945224', 'post30945224')"><pre>            return self.cursor.execute(query, args)</pre> <span>...</span></li></ol>
+              <ol start="54" class="context-line"><li onclick="toggle('pre29398440', 'post29398440')"><pre>            return self.cursor.execute(query, args)</pre> <span>...</span></li></ol>
               
-                <ol start='55' class="post-context" id="post30945224"><li onclick="toggle('pre30945224', 'post30945224')"><pre>        except Database.IntegrityError as e:</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>            six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>        except Database.DatabaseError as e:</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>            six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])</pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre></pre></li><li onclick="toggle('pre30945224', 'post30945224')"><pre>    def executemany(self, query, args):</pre></li></ol>
+                <ol start='55' class="post-context" id="post29398440"><li onclick="toggle('pre29398440', 'post29398440')"><pre>        except Database.IntegrityError as e:</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>            six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>        except Database.DatabaseError as e:</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>            six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])</pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre></pre></li><li onclick="toggle('pre29398440', 'post29398440')"><pre>    def executemany(self, query, args):</pre></li></ol>
               
             </div>
           
@@ -1093,10 +1093,10 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '30945224')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '29398440')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v30945224">
+            <table class="vars" id="v29398440">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -1112,7 +1112,7 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>e</td>
-                    <td class="code"><pre>IntegrityError(&#39;null value in column &quot;timestamp&quot; violates not-null constraint\nDETAIL:  Failing row contains (5, null, null, null, null, null).\n&#39;,)</pre></td>
+                    <td class="code"><pre>IntegrityError(&#39;null value in column &quot;timestamp&quot; violates not-null constraint\nDETAIL:  Failing row contains (9, null, null, null, null, null).\n&#39;,)</pre></td>
                   </tr>
                 
                   <tr>
@@ -1122,7 +1122,7 @@ META:{&#39;CONTENT_LENGTH&#39;: &#39;26&#39;,
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.db.backends.postgresql_psycopg2.base.CursorWrapper object at 0x1dd29d0&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql_psycopg2.base.CursorWrapper object at 0x1d68050&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -1197,7 +1197,7 @@ File "/app/.heroku/python/lib/python2.7/site-packages/django/db/backends/postgre
 
 Exception Type: IntegrityError at /
 Exception Value: null value in column &quot;timestamp&quot; violates not-null constraint
-DETAIL:  Failing row contains (5, null, null, null, null, null).
+DETAIL:  Failing row contains (9, null, null, null, null, null).
 
 </textarea>
   <br><br>
@@ -1229,12 +1229,27 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
       <tbody>
         
           <tr>
-            <td>timestamp</td>
-            <td class="code"><pre>u&#39;123&#39;</pre></td>
+            <td>t</td>
+            <td class="code"><pre>u&#39;124563&#39;</pre></td>
           </tr>
         
           <tr>
-            <td>device_id</td>
+            <td>n1</td>
+            <td class="code"><pre>u&#39;4&#39;</pre></td>
+          </tr>
+        
+          <tr>
+            <td>tripID</td>
+            <td class="code"><pre>u&#39;3&#39;</pre></td>
+          </tr>
+        
+          <tr>
+            <td>v1</td>
+            <td class="code"><pre>u&#39;9&#39;</pre></td>
+          </tr>
+        
+          <tr>
+            <td>devID</td>
             <td class="code"><pre>u&#39;18&#39;</pre></td>
           </tr>
         
@@ -1279,7 +1294,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
       
         <tr>
           <td>REMOTE_ADDR</td>
-          <td class="code"><pre>&#39;10.68.74.220&#39;</pre></td>
+          <td class="code"><pre>&#39;10.42.117.146&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1314,7 +1329,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
       
         <tr>
           <td>CONTENT_LENGTH</td>
-          <td class="code"><pre>&#39;26&#39;</pre></td>
+          <td class="code"><pre>&#39;36&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1334,7 +1349,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
       
         <tr>
           <td>HTTP_X_REQUEST_START</td>
-          <td class="code"><pre>&#39;1380414679675&#39;</pre></td>
+          <td class="code"><pre>&#39;1380415160171&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1344,7 +1359,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
       
         <tr>
           <td>wsgi.input</td>
-          <td class="code"><pre>&lt;gunicorn.http.body.Body object at 0x1dd2e10&gt;</pre></td>
+          <td class="code"><pre>&lt;gunicorn.http.body.Body object at 0x1d46f50&gt;</pre></td>
         </tr>
       
         <tr>
@@ -1359,7 +1374,7 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
       
         <tr>
           <td>CSRF_COOKIE</td>
-          <td class="code"><pre>u&#39;628qakEgYFwqa4KGGxP0xJRGC2WYJC7b&#39;</pre></td>
+          <td class="code"><pre>u&#39;bDHp3weBtHbO4cHznjLMEFEcSEYfRqG1&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1409,12 +1424,12 @@ DETAIL:  Failing row contains (5, null, null, null, null, null).
       
         <tr>
           <td>gunicorn.socket</td>
-          <td class="code"><pre>&lt;socket._socketobject object at 0x1d288a0&gt;</pre></td>
+          <td class="code"><pre>&lt;socket._socketobject object at 0x1d283d0&gt;</pre></td>
         </tr>
       
         <tr>
           <td>REMOTE_PORT</td>
-          <td class="code"><pre>&#39;38583&#39;</pre></td>
+          <td class="code"><pre>&#39;39861&#39;</pre></td>
         </tr>
       
     </tbody>
