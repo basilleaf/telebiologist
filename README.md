@@ -1,3 +1,7 @@
+This app accepts sensor data (or any data) via http POST requests and allows open access to that data.
+
+The script post_data_from_arduino.py takes readings from serial port and posts to this app.
+
 ## How to Post Data
 
 do something like:
