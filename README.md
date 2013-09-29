@@ -1,4 +1,4 @@
-# How to Post Data
+## How to Post Data
 
 do something like:
 
@@ -10,7 +10,7 @@ can accept up to 3 more key/value pairs with each POST:
 
 
 
-# How to Get the Data
+## How to Get the Data
 
 <http://powerful-sands-3128.herokuapp.com/>
 
