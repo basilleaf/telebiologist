@@ -5,6 +5,7 @@ from django.core import serializers
 from server.models import *
 from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+rom django.forms.models import model_to_dict
 
 class testview(View):
 
@@ -12,7 +13,6 @@ class testview(View):
         data = Reading.objects.all()
         paginator = Paginator(data, 100)
         page = request.GET.get('page')
-        return HttpResponse(page)
         try:
             page_data = paginator.page(page)
         except PageNotAnInteger:
@@ -22,8 +22,13 @@ class testview(View):
             # If page is out of range (e.g. 9999), deliver last page of results.
             page_data = paginator.page(paginator.num_pages)
 
-        jsondata = serializers.serialize('json', page_data)
-        return HttpResponse(jsondata, mimetype='application/json')
+        # json serializer doesn't play nice with paginator and that is stupid, thus:
+        json_struct = []
+        for p in page_data:
+            json_struct.append(model_to_dict(p))
+
+        # jsondata = serializers.serialize('json', json_struct)
+        return HttpResponse(json.dumps(json_struct), mimetype='application/json')
 
 
 class dataview(View):
