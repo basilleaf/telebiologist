@@ -11,7 +11,7 @@ class testview(View):
 
     def get(self, request):
         data = Reading.objects.all()
-        paginator = Paginator(data, 100)
+        paginator = Paginator(data, 20)
         page = request.GET.get('page')
         try:
             page_data = paginator.page(page)
