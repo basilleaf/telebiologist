@@ -10,14 +10,14 @@ see all the uploaded data at:
 
 <http://powerful-sands-3128.herokuapp.com/>
 
-that is paginated, so like:
+that is default paginated, so like:
 
 <http://powerful-sands-3128.herokuapp.com?page=2>
 
-to turn pagination off, say page=all
+to turn pagination off and get all the data, say page=all
 
 <http://powerful-sands-3128.herokuapp.com?page=all>
 
-also can get csv
+also can get csv format:
 
 <http://powerful-sands-3128.herokuapp.com?page=2&fmt=csv>
