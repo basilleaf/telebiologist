@@ -5,5 +5,5 @@ class Reading(models.Model):
     timestamp = models.IntegerField()
     device_id = models.IntegerField()
     trip_id = models.IntegerField()
-    sensor_id = models.CharField()
-    sensor_value = models.CharField()
+    sensor_id = models.CharField(max_length=60)
+    sensor_value = models.FloatField()
