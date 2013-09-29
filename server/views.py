@@ -24,11 +24,16 @@ class testview(View):
             return HttpResponse(json.dumps(json_struct), mimetype='application/json')
 
         if fmt == 'csv':
-            json_struct = []
+            csv_struct = []
             for p in page_data:
-                json_struct.append(model_to_dict(p))
+                for k,v in model_to_dict(p).iteritems():
+                    csv_struct.append('"' + '","'.join([str(v) for k,v in model_to_dict(p).iteritems()]) + '"')
+
+            # insert column labels in first row
+            csv_struct.insert(0, '"' + '","'.join([str(k) for k,v in model_to_dict(p).iteritems()]) + '"')
+
             # jsondata = serializers.serialize('json', json_struct)
-            return HttpResponse(json.dumps(json_struct), mimetype='application/json')
+            return HttpResponse(json.dumps(csv_struct), mimetype='text/csv')
 
 
     def get_page_data(self, page):
