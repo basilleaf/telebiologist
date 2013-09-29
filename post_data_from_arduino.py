@@ -12,7 +12,7 @@ while True:
         (n1, v1) = reading.split(':')
         v1 = int(v1)
         t = int(time.split(':')[1])
-        tripID = 3
+        tripID = 4
         devID = 3
         payload = {'t':t,  'n1': n1, 'v1': v1, 'tripID': tripID, 'devID': devID}
         payload_encoded = urllib.urlencode(payload)
