@@ -3,6 +3,8 @@ from django.http import HttpResponse
 import json
 from django.core import serializers
 from server.models import *
+from django.views.decorators.csrf import csrf_exempt
+
 
 class sensordata(View):
 
@@ -12,6 +14,7 @@ class sensordata(View):
         jsondata = serializers.serialize('json', data)
         return HttpResponse(jsondata, mimetype='application/json')
 
+    @csrf_exempt
     def post(self, request):
         timestamp = request.GET.get('t', None)
         device_id = request.GET.get('devID', None)
