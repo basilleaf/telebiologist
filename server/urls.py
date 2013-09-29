@@ -4,11 +4,12 @@ from django.conf.urls import patterns, include, url
 # from django.contrib import admin
 # admin.autodiscover()
 from server.views import sensordata
+from django.views.decorators.csrf import csrf_exempt
 
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', sensordata.as_view()),
+    url(r'^$', csrf_exempt(sensordata.as_view())),
     # url(r'^server/', include('server.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

@@ -14,7 +14,6 @@ class sensordata(View):
         jsondata = serializers.serialize('json', data)
         return HttpResponse(jsondata, mimetype='application/json')
 
-    @csrf_exempt
     def post(self, request):
         timestamp = request.GET.get('t', None)
         device_id = request.GET.get('devID', None)
