@@ -38,6 +38,9 @@ class dataview(View):
 
     def get_page_data(self, page):
         data = Reading.objects.all()
+        if page == 'all':
+            return data
+
         paginator = Paginator(data, 20)
 
         try:
@@ -55,25 +58,8 @@ class dataview(View):
 class testview(View):
 
     def get(self, request):
-        data = Reading.objects.all()
-        paginator = Paginator(data, 20)
-        page = request.GET.get('page')
-        try:
-            page_data = paginator.page(page)
-        except PageNotAnInteger:
-            # If page is not an integer, deliver first page.
-            page_data = paginator.page(1)
-        except EmptyPage:
-            # If page is out of range (e.g. 9999), deliver last page of results.
-            page_data = paginator.page(paginator.num_pages)
 
-        # json serializer doesn't play nice with paginator and that is stupid, thus:
-        json_struct = []
-        for p in page_data:
-            json_struct.append(model_to_dict(p))
-
-        # jsondata = serializers.serialize('json', json_struct)
-        return HttpResponse(json.dumps(json_struct), mimetype='application/json')
+        return HttpResponse('hello test')
 
 class sensordata(View):
 
