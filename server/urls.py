@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
-from server.views import sensordata
+from server.views import sensordata, dataview
 from django.views.decorators.csrf import csrf_exempt
 import os
 
@@ -11,7 +11,7 @@ SUPER_SECRET_URL_PATH = os.environ['SUPER_SECRET_URL_PATH']
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', csrf_exempt(sensordata.as_view())),
+    url(r'^$', csrf_exempt(dataview.as_view())),
     url(r'^' + SUPER_SECRET_URL_PATH + '$', csrf_exempt(sensordata.as_view())),
     # url(r'^server/', include('server.foo.urls')),
 

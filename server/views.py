@@ -5,13 +5,15 @@ from django.core import serializers
 from server.models import *
 from django.views.decorators.csrf import csrf_exempt
 
-class sensordata(View):
+class dataview(View):
 
-    def get(self, request):
+        def get(self, request):
         # return HttpResponse('hello world')
         data = Reading.objects.all()
         jsondata = serializers.serialize('json', data)
         return HttpResponse(jsondata, mimetype='application/json')
+
+class sensordata(View):
 
     def post(self, request):
         timestamp = request.POST.get('t', None)
