@@ -5,7 +5,6 @@ from secrets import *
 
 url = 'http://powerful-sands-3128.herokuapp.com/' + SUPER_SECRET_URL_PATH
 
-
 ser = serial.Serial('/dev/tty.usbmodemfa131', 19200)
 while True:
     data = ser.readline()
@@ -21,6 +20,6 @@ while True:
         urllib2.urlopen(url, payload_encoded)
         print 'ok: ' + str(payload)
     except:
-        print 'nope'
+        print 'nope'  # i am a horrible coder
         pass
 
