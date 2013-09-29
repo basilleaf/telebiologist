@@ -6,4 +6,4 @@ class Reading(models.Model):
     device_id = models.IntegerField()
     trip_id = models.IntegerField()
     sensor_id = models.CharField(max_length=60)
-    sensor_value = models.FloatField()
+    sensor_value = models.FloatField(max_length=60)
