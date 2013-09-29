@@ -1,4 +1,5 @@
 # Django settings for server project.
+from secrets import *
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -81,9 +82,6 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = '$6anh+239im_my%00xdi7r$87-f131kk7turt=my%bd7ols5x$'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

@@ -3,3 +3,4 @@ venv
 staticfiles
 errors.html
 errors.txt
+secrets.py
