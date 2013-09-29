@@ -1,8 +1,10 @@
 import serial
 import urllib
 import urllib2
+from secrets import *
 
-url = 'http://powerful-sands-3128.herokuapp.com/sciencehackday2014fromthefuture'
+url = 'http://powerful-sands-3128.herokuapp.com/' + SUPER_SECRET_URL_PATH
+
 
 ser = serial.Serial('/dev/tty.usbmodemfa131', 19200)
 while True:
