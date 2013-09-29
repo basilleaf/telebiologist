@@ -12,6 +12,7 @@ class testview(View):
         data = Reading.objects.all()
         paginator = Paginator(data, 100)
         page = request.GET.get('page')
+        return HttpResponse(page)
         try:
             page_data = paginator.page(page)
         except PageNotAnInteger:
