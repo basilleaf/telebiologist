@@ -11,10 +11,41 @@ from django.forms.models import model_to_dict
 class testview(View):
 
     def get(self, request):
-        # return HttpResponse('hello world')
+        page = request.GET.get('page')
+        fmt = request.GET.get('fmt', 'json')
+        page_data = get_page_data(page)
+
+        # json serializer doesn't play nice with paginator and that is stupid, thus:
+        if fmt == 'json':
+            json_struct = []
+            for p in page_data:
+                json_struct.append(model_to_dict(p))
+            # jsondata = serializers.serialize('json', json_struct)
+            return HttpResponse(json.dumps(json_struct), mimetype='application/json')
+
+        if fmt == 'csv':
+            json_struct = []
+            for p in page_data:
+                json_struct.append(model_to_dict(p))
+            # jsondata = serializers.serialize('json', json_struct)
+            return HttpResponse(json.dumps(json_struct), mimetype='application/json')
+
+
+    def get_page_data(page):
         data = Reading.objects.all()
-        jsondata = serializers.serialize('json', data)
-        return HttpResponse(jsondata, mimetype='application/json')
+        paginator = Paginator(data, 20)
+
+        try:
+            page_data = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            page_data = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            page_data = paginator.page(paginator.num_pages)
+
+        return page_data
+
 
 
 class dataview(View):

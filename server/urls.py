@@ -12,7 +12,10 @@ SUPER_SECRET_URL_PATH = os.environ['SUPER_SECRET_URL_PATH']
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', csrf_exempt(dataview.as_view())),
+    url(r'^sensor/(?P<sensor_id>\w+)$', csrf_exempt(testview.as_view())),
     url(r'^test$', csrf_exempt(testview.as_view())),
+
+
     url(r'^' + SUPER_SECRET_URL_PATH + '$', csrf_exempt(sensordata.as_view())),
     # url(r'^server/', include('server.foo.urls')),
 
