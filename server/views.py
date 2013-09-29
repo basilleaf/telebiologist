@@ -33,7 +33,7 @@ class testview(View):
             csv_struct.insert(0, '"' + '","'.join([str(k) for k,v in model_to_dict(p).iteritems()]) + '"')
 
             # jsondata = serializers.serialize('json', json_struct)
-            return HttpResponse("\n".join(csv_struct)), mimetype='text/csv')
+            return HttpResponse("\n".join(csv_struct), mimetype='text/csv')
 
 
     def get_page_data(self, page):
