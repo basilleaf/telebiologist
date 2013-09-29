@@ -26,22 +26,22 @@ class sensordata(View):
         reading.save()
 
         # are there more sensors on this thing?
-        sensor_id2 = request.POST.get('n1', None)
-        sensor_value2 = request.POST.get('v1', None)
+        sensor_id2 = request.POST.get('n2', None)
+        sensor_value2 = request.POST.get('v2', None)
         if sensor_id2:
             reading2 = Reading(timestamp=timestamp, device_id=device_id, trip_id=trip_id, sensor_id=sensor_id2, sensor_value=sensor_value2)
             reading2.save()
 
         # i know i am so lame
-        sensor_id3 = request.POST.get('n1', None)
-        sensor_value3 = request.POST.get('v1', None)
+        sensor_id3 = request.POST.get('n3', None)
+        sensor_value3 = request.POST.get('v3', None)
         if sensor_id3:
             reading3 = Reading(timestamp=timestamp, device_id=device_id, trip_id=trip_id, sensor_id=sensor_id3, sensor_value=sensor_value3)
             reading3.save()
 
         # so so so so lame
-        sensor_id4 = request.POST.get('n1', None)
-        sensor_value4 = request.POST.get('v1', None)
+        sensor_id4 = request.POST.get('n4', None)
+        sensor_value4 = request.POST.get('v4', None)
         if sensor_id4:
             reading4 = Reading(timestamp=timestamp, device_id=device_id, trip_id=trip_id, sensor_id=sensor_id4, sensor_value=sensor_value4)
             reading4.save()
