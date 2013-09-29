@@ -13,7 +13,7 @@ class testview(View):
     def get(self, request):
         page = request.GET.get('page')
         fmt = request.GET.get('fmt', 'json')
-        page_data = get_page_data(page)
+        page_data = self.get_page_data(page)
 
         # json serializer doesn't play nice with paginator and that is stupid, thus:
         if fmt == 'json':
