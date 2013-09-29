@@ -10,3 +10,6 @@ http://powerful-sands-3128.herokuapp.com/
 
 that is paginated, so like:
 http://powerful-sands-3128.herokuapp.com?page=2
+
+also can get csv
+http://powerful-sands-3128.herokuapp.com?page=2&fmt=csv

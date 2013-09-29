@@ -8,7 +8,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.forms.models import model_to_dict
 
 
-class testview(View):
+class dataview(View):
 
     def get(self, request):
         page = request.GET.get('page')
@@ -52,8 +52,7 @@ class testview(View):
         return page_data
 
 
-
-class dataview(View):
+class testview(View):
 
     def get(self, request):
         data = Reading.objects.all()
