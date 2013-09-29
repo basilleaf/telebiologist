@@ -23,3 +23,5 @@ class sensordata(View):
 
         reading = Reading(timestamp=timestamp, device_id=device_id, trip_id=trip_id, sensor_id=sensor_id, sensor_value=sensor_value)
         reading.save()
+
+        return HttpResponse('ok')
