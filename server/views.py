@@ -5,7 +5,7 @@ from django.core import serializers
 from server.models import *
 from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-rom django.forms.models import model_to_dict
+from django.forms.models import model_to_dict
 
 class testview(View):
 
