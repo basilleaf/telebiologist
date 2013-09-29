@@ -4,6 +4,7 @@ import json
 from django.core import serializers
 from server.models import *
 from django.views.decorators.csrf import csrf_exempt
+from django.core.paginator import Paginator
 
 class testview(View):
 
