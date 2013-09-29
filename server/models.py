@@ -7,6 +7,7 @@ class Reading(models.Model):
     trip_id = models.IntegerField()
     sensor_id = models.CharField(max_length=60)
     sensor_value = models.FloatField(max_length=60)
+    added = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ['-timestamp']
