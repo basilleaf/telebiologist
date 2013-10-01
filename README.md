@@ -16,7 +16,7 @@ can accept up to 3 more key/value pairs with each POST:
 
 ## How to Get Data from the API
 
-it's here:
+latest readings are here:
 
 <http://powerful-sands-3128.herokuapp.com/api/readings?format=json>
 
