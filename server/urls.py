@@ -1,7 +1,7 @@
 import os
 from django.conf.urls import patterns, include, url
 from django.views.decorators.csrf import csrf_exempt
-from server.views import sensordata, testview
+from server.views import sensordata
 from server.api import ReadingResource
 
 reading_resource = ReadingResource()
@@ -10,7 +10,6 @@ SUPER_SECRET_URL_PATH = os.environ['SUPER_SECRET_URL_PATH']
 
 urlpatterns = patterns('',
     # Examples:
-    (r'^test$', csrf_exempt(testview.as_view())),
     (r'^api/', include(reading_resource.urls)),
     (r'^' + SUPER_SECRET_URL_PATH + '$', csrf_exempt(sensordata.as_view())),
 
