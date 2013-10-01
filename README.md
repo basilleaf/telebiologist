@@ -6,7 +6,7 @@ The script post_data_from_arduino.py takes readings from serial port and posts t
 
 do something like:
 
-    curl --data "t=124563&devID=18&tripID=3&n1=4&v1=9"  http://powerful-sands-3128.herokuapp.com/[SUPER SECRET URL PATH]
+    curl --data "t=124563&devID=18&tripID=3&n1=4&v1=9"  http://powerful-sands-3128.herokuapp.com/[SUPER_SECRET_URL_PATH]
 
 can accept up to 3 more key/value pairs with each POST:
 
