@@ -10,7 +10,7 @@ class ReadingResource(ModelResource):
         queryset = Reading.objects.all()
         resource_name = 'readings'
         filtering = {
-            'timestamp': ALL,
+            'timestamp': ['exact', 'range', 'gt', 'gte', 'lt', 'lte'],
             'device_id': ALL,
             'trip_id': ALL,
             'sensor_id': ALL,

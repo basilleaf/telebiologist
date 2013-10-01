@@ -1,4 +1,4 @@
-This app accepts sensor data (or any data) via http POST requests and presents an api to that data
+This app accepts sensor data (or any data) via http POST requests and exposes an api to fetch the data
 
 The script post_data_from_arduino.py takes readings from serial port and posts to this app.
 
@@ -14,22 +14,36 @@ can accept up to 3 more key/value pairs with each POST:
 
 
 
-## How to Get the
+## How to Get Data from the API
 
 it's here:
 
-<http://powerful-sands-3128.herokuapp.com/>
+<http://powerful-sands-3128.herokuapp.com/api/readings?format=json>
 
-that is default paginated, so like:
+you can filter by any field, for example sensor_id:
 
-<http://powerful-sands-3128.herokuapp.com?page=2>
+<http://powerful-sands-3128.herokuapp.com/api/readings/?format=json&sensor_id=lux>
 
-to turn pagination off and get all the data, say page=all
+and you can search by date added and timestamp in different ways: ['exact', 'range', 'gt', 'gte', 'lt', 'lte']
 
-<http://powerful-sands-3128.herokuapp.com?page=all>
+for example, here is all readings of sensor "lux" added on a specific day
 
-also can get csv format:
+<http://powerful-sands-3128.herokuapp.com/api/readings/?format=json&offset=100&sensor_id=lux&limit=0&added__gte=2013-09-29>
 
-<http://powerful-sands-3128.herokuapp.com?page=2&fmt=csv>
+restuls are paginated, default limit per page is 20, in the meta of the first page you can grab the link to the next/previous page, or set the offset yourself, like:
+
+<http://powerful-sands-3128.herokuapp.com/api/readings/?format=json&offset=100>
+
+also you can override the default limit
+
+<http://powerful-sands-3128.herokuapp.com/api/readings/?format=json&limit=100>
+
+If you want to skip paginating and grab all the data, set limit=0
+
+<http://powerful-sands-3128.herokuapp.com/api/readings/?format=json&limit=0>
+
+you can get several different formats including csv, for example this will grab all lux readings on a given day in csv:
+
+<http://powerful-sands-3128.herokuapp.com/api/readings/?format=json&sensor_id=lux&limit=0&added__gte=2013-09-2&format=csv>
 
 
