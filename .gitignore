@@ -1,6 +1,6 @@
 venv
+.env
 *.pyc
-staticfiles
+secrets.py
 errors.html
 errors.txt
-secrets.py
