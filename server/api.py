@@ -18,6 +18,7 @@ class ReadingResource(ModelResource):
             'added': ['exact', 'range', 'gt', 'gte', 'lt', 'lte'],
         }
         serializer = CSVSerializer(formats=['json', 'jsonp', 'csv', 'xml', 'yaml', 'html', 'plist'])
+        max_limit = None
 
 
 
