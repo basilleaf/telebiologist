@@ -13,11 +13,21 @@ class sensordata(View):
     # takes POST submissions of sensor data and saves to db
 
     def post(self, request):
-        timestamp = request.POST.get('t', None)
-        device_id = request.POST.get('devID', None)
-        trip_id = request.POST.get('tripID', None)
-        sensor_id = request.POST.get('n1', None)
-        sensor_value = request.POST.get('v1', None)
+
+        # supporting standard field names as they appear in the model
+        timestamp = request.POST.get('timestamp, None)
+        device_id = request.POST.get('device_id', None)
+        trip_id = request.POST.get('trip_id', None)
+        sensor_id = request.POST.get('sensor_id', None)
+        sensor_value = request.POST.get('sensor_value', None)
+
+        # this is just to support Jethro's original Science Hack Day code..
+        if not sensor_id:
+            timestamp = request.POST.get('t', None)
+            device_id = request.POST.get('devID', None)
+            trip_id = request.POST.get('tripID', None)
+            sensor_id = request.POST.get('n1', None)
+            sensor_value = request.POST.get('v1', None)
 
         reading = Reading(timestamp=timestamp, device_id=device_id,
                           trip_id=trip_id, sensor_id=sensor_id,
